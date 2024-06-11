@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.lovify.R;
 import com.example.lovify.model.User;
@@ -74,12 +75,12 @@ public class Home extends Fragment {
 
             @Override
             public void onLeftCardExit(Object o) {
-
+                Toast.makeText(getContext(),"Reject",Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onRightCardExit(Object o) {
-
+                Toast.makeText(getContext(),"Liked",Toast.LENGTH_LONG).show();
             }
 
             @Override

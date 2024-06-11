@@ -41,12 +41,14 @@ public class Pref extends AppCompatActivity {
             data.put("Pref Gender","Male");
             Intent i = new Intent(this, MusicPref.class);
             i.putExtra("data",data);
+            startActivity(i);
         });
 
         femaleBtn.setOnClickListener(v -> {
             data.put("Pref Gender","Female");
             Intent i = new Intent(this, MusicPref.class);
             i.putExtra("data",data);
+            startActivity(i);
         });
 
     }
